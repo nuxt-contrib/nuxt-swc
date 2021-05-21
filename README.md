@@ -17,6 +17,7 @@ This module is an experiment. Some features might be broken.
 
 - Check [comparison with babel](https://swc.rs/docs/comparison-babel/)
 - Sourcemap is disabled
+- Not working with [content module](https://content.nuxtjs.org/)
 - Babel options
 
 ## Usage
