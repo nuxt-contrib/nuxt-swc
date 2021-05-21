@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-swc",
+  "version": "0.0.0",
+  "repository": "nuxt-contrib/nuxt-swc",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "siroc build",
+    "dev": "nuxt dev test/fixture",
+    "lint": "eslint --ext .ts .",
+    "prepack": "yarn build",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "yarn lint"
+  },
+  "dependencies": {
+    "@swc/core": "^1.2.58",
+    "defu": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^6.0.0",
+    "eslint": "^7.22.0",
+    "nuxt": "^2.15.3",
+    "siroc": "^0.10.1",
+    "standard-version": "^9.1.1",
+    "swc-loader": "^0.1.14"
+  }
+}
