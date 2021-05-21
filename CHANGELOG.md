@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/nuxt-contrib/nuxt-swc/compare/v0.0.2...v0.0.3) (2021-05-21)
+
+
+### Features
+
+* improve extension handling ([d6059b7](https://github.com/nuxt-contrib/nuxt-swc/commit/d6059b7bfc97104d644c0bb4cee153c80e2f1942))
+
 ### [0.0.2](https://github.com/nuxt-contrib/nuxt-swc/compare/v0.0.1...v0.0.2) (2021-05-21)
 
 
