@@ -17,30 +17,34 @@ function swcModule () {
   const swcTSOptions = defu(swcOptions, {
     jsc: {
       parser: {
-        syntax: 'typescript',
-        dynamicImport: true
+        syntax: 'typescript'
       }
     }
   })
 
+  nuxt.options.extensions.push('ts')
+  nuxt.options.build.additionalExtensions = ['ts', 'tsx']
+
   nuxt.hook('webpack:config', (configs) => {
     for (const config of configs) {
+      config.resolve!.extensions!.push('.ts', '.tsx')
       config.module.rules = [
+        ...config.module.rules.filter(r => '.vue'.match(r.test)),
         {
-          test: /\.m?[jt]sx?$/i,
+          test: /\.m?jsx?$/i,
           use: {
             loader: require.resolve('swc-loader'),
             options: swcOptions
           }
         },
         {
-          test: /\.m?[jt]sx?$/i,
+          test: /\.tsx?$/i,
           use: {
             loader: require.resolve('swc-loader'),
             options: swcTSOptions
           }
         },
-        ...config.module.rules.filter(r => !'.js'.match(r.test))
+        ...config.module.rules.filter(r => !('.js'.match(r.test) || '.vue'.match(r.test)))
       ]
     }
   })
