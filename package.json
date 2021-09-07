@@ -1,6 +1,6 @@
 {
   "name": "nuxt-swc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "nuxt-contrib/nuxt-swc",
   "license": "MIT",
   "main": "./dist/index.js",

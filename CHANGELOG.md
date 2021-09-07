@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/nuxt-contrib/nuxt-swc/compare/v0.0.3...v0.0.4) (2021-09-07)
+
+
+### Features
+
+* expose types on `build.swc` ([#4](https://github.com/nuxt-contrib/nuxt-swc/issues/4)) ([a0763ed](https://github.com/nuxt-contrib/nuxt-swc/commit/a0763ed93775d3fb1444aba7a343fae8b0e915fc))
+* use `preset-env` for appropriate client/server/modern targets ([#5](https://github.com/nuxt-contrib/nuxt-swc/issues/5)) ([a1d9a56](https://github.com/nuxt-contrib/nuxt-swc/commit/a1d9a568e707822bec7779c352d288599cdd0a41))
+
 ### [0.0.3](https://github.com/nuxt-contrib/nuxt-swc/compare/v0.0.2...v0.0.3) (2021-05-21)
 
 
