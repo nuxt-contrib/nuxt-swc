@@ -1,26 +1,29 @@
 import defu from 'defu'
 import { name, version } from '../package.json'
+import type { Options } from '@swc/core'
 
 function swcModule () {
   const { nuxt } = this
 
-  const swcOptions = defu(nuxt.options.build.swc, {
+  const swcOptions: Options = defu(nuxt.options.build.swc, {
     // sync: true,
     sourceMaps: false,
     jsc: {
+      target: 'es2019',
       parser: {
         dynamicImport: true
       }
     }
-  })
+  } as Options)
 
   const swcTSOptions = defu(swcOptions, {
     jsc: {
+      target: 'es2019',
       parser: {
         syntax: 'typescript'
       }
     }
-  })
+  } as Options)
 
   nuxt.options.extensions.push('ts')
   nuxt.options.build.additionalExtensions = ['ts', 'tsx']
