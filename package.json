@@ -28,5 +28,11 @@
     "nuxt": "^2.15.3",
     "siroc": "^0.10.1",
     "standard-version": "^9.1.1"
+  },
+  "peerDependencies": {
+    "browserslist": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=12"
   }
 }
