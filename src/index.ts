@@ -18,7 +18,6 @@ function swcModule () {
 
   const swcTSOptions = defu(swcOptions, {
     jsc: {
-      target: 'es2019',
       parser: {
         syntax: 'typescript'
       }
