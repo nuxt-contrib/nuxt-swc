@@ -22,7 +22,7 @@ function swcModule () {
         syntax: 'typescript'
       }
     }
-  } as Options)
+  })
 
   nuxt.options.extensions.push('ts')
   nuxt.options.build.additionalExtensions = ['ts', 'tsx']
