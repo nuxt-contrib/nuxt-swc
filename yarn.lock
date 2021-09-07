@@ -1147,26 +1147,6 @@
     node-html-parser "^3.2.0"
     ufo "^0.7.4"
 
-"@nuxt/kit@^0.6.4":
-  version "0.6.4"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-0.6.4.tgz#76a81e135bfeb91c0b5eb58435c8e5640046c912"
-  integrity sha512-NsV8TEVN+oTOgJvrsaIuyMaq/mFW+O7Rnz+sGUMlJlUskBC0KyqkrLkclNFyXsrnf4MEudAV+1WwtOyFVODltw==
-  dependencies:
-    consola "^2.15.3"
-    create-require "^1.1.1"
-    defu "^5.0.0"
-    dotenv "^10.0.0"
-    globby "^11.0.4"
-    hash-sum "^2.0.0"
-    jiti "^1.10.1"
-    rc9 "^1.2.0"
-    scule "^0.2.1"
-    std-env "^2.3.0"
-    ufo "^0.7.5"
-    unctx "^0.0.3"
-    untyped "^0.2.5"
-    upath "^2.0.1"
-
 "@nuxt/loading-screen@^2.0.3":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@nuxt/loading-screen/-/loading-screen-2.0.4.tgz#756abd861f77c57001be4d21d47534723afb4f3a"
@@ -4105,11 +4085,6 @@ dot-prop@^5.1.0, dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
-  integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
-
 dotenv@^9.0.2:
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-9.0.2.tgz#dacc20160935a37dea6364aa1bef819fb9b6ab05"
@@ -5139,18 +5114,6 @@ globby@^11.0.1, globby@^11.0.3:
     merge2 "^1.3.0"
     slash "^3.0.0"
 
-globby@^11.0.4:
-  version "11.0.4"
-  resolved "https://registry.yarnpkg.com/globby/-/globby-11.0.4.tgz#2cbaff77c2f2a62e71e9b2813a67b97a3a3001a5"
-  integrity sha512-9O4MVG9ioZJ08ffbcyVYyLOJLk5JQ688pJ4eMGLpdWLHq/Wr1D9BlriLQyL0E+jbkuePVZXYFj47QM/v093wHg==
-  dependencies:
-    array-union "^2.1.0"
-    dir-glob "^3.0.1"
-    fast-glob "^3.1.1"
-    ignore "^5.1.4"
-    merge2 "^1.3.0"
-    slash "^3.0.0"
-
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4:
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
@@ -5896,11 +5859,6 @@ jest-worker@^26.5.0:
     "@types/node" "*"
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
-
-jiti@^1.10.1:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.11.0.tgz#64120a30d97b9bf37b8b032cf4564dfadc28984c"
-  integrity sha512-/2c7e61hxxTIN34UeHBB0LCJ5Tq64kgJDV7GR+++e8XRxCKRIKmB8tH6ww1W+Z6Kgd6By+C3RSCu1lXjbPT68A==
 
 jiti@^1.9.1, jiti@^1.9.2:
   version "1.9.2"
@@ -9675,11 +9633,6 @@ ufo@^0.7.4:
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-0.7.5.tgz#5d5b2174747c0072edd30501994c8ac4ad2e77ea"
   integrity sha512-FGG+EgguC1oz5dTE1JptPWCyj6Z9mYpwvZY8PTu9Vh/Aoy+Mj9cpeQ3gg4kyEMDbMrH+lTYiw7bomG58B8X7Kg==
 
-ufo@^0.7.5:
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/ufo/-/ufo-0.7.9.tgz#0268e3734b413c9ed6f3510201f42372821b875c"
-  integrity sha512-6t9LrLk3FhqTS+GW3IqlITtfRB5JAVr5MMNjpBECfK827W+Vh5Ilw/LhTcHWrt6b3hkeBvcbjx4Ti7QVFzmcww==
-
 uglify-js@^3.1.4, uglify-js@^3.5.1:
   version "3.13.7"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.7.tgz#25468a3b39b1c875df03f0937b2b7036a93f3fee"
@@ -9694,11 +9647,6 @@ unbox-primitive@^1.0.0:
     has-bigints "^1.0.1"
     has-symbols "^1.0.2"
     which-boxed-primitive "^1.0.2"
-
-unctx@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/unctx/-/unctx-0.0.3.tgz#e06f67d5bebe2babe5a57c1dc13d77255e3458c0"
-  integrity sha512-x+NCoXiYn93laQNnoJGZx2UZj7vv8ViFKadUCDx9S4QoPIkGRCYT0OLUDEMlg/B+Q6bnqdSkPLmiy/kjNIwVyQ==
 
 unfetch@^4.2.0:
   version "4.2.0"
@@ -9789,11 +9737,6 @@ unset-value@^1.0.0:
   dependencies:
     has-value "^0.3.1"
     isobject "^3.0.0"
-
-untyped@^0.2.5:
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/untyped/-/untyped-0.2.8.tgz#14a15ab7455004dc2da9972ccbadb237bbee5d7b"
-  integrity sha512-SCXbOqy1sT56l5y7A4LVkXTBBMdTNneAoVrqwYlpXdK85QmOPKrPUGlitejsDK0YUpWSf1KFZWAj8CH7KpuSyg==
 
 upath@^1.1.1:
   version "1.2.0"
