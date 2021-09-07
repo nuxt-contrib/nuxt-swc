@@ -14,28 +14,29 @@ const defaultTargets = {
 }
 
 function swcModule (this: ModuleThis) {
-  this.options.extensions.push('ts')
-  this.options.build.additionalExtensions = ['ts', 'tsx']
+  const { nuxt, options } = this
+  options.extensions.push('ts')
+  options.build.additionalExtensions = ['ts', 'tsx']
 
   // Auto detect corejs version:
   // https://github.com/nuxt/nuxt.js/tree/dev/packages/webpack/src/config/base.js#L124-L132
   let coreJs: string
-  if (this.options.build.corejs === 'auto') {
+  if (options.build.corejs === 'auto') {
     try {
       coreJs = require('core-js/package.json').version.split('.')[0]
     } catch (_err) {
       coreJs = '2'
     }
   } else {
-    coreJs = String(this.options.build.corejs)
+    coreJs = String(options.build.corejs)
   }
 
-  this.nuxt.hook('webpack:config', (configs) => {
+  nuxt.hook('webpack:config', (configs) => {
     for (const config of configs) {
-      const swcOptions: Options = defu(this.options.build.swc, {
+      const swcOptions: Options = defu(options.build.swc, {
         // sync: true,
         sourceMaps: false,
-        minify: this.options.build.optimization?.minimize ?? (!this.options.dev && config.name !== 'server'),
+        minify: options.build.optimization?.minimize ?? (!options.dev && config.name !== 'server'),
         env: {
           coreJs,
           targets: defaultTargets[config.name]
