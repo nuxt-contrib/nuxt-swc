@@ -1,10 +1,12 @@
 import defu from 'defu'
 import { name, version } from '../package.json'
+import type { Options } from '@swc/core'
+import type { NuxtOptionsBuild } from '@nuxt/types/config/build'
 
 function swcModule () {
   const { nuxt } = this
 
-  const swcOptions = defu(nuxt.options.build.swc, {
+  const swcOptions: Options = defu(nuxt.options.build.swc, {
     // sync: true,
     sourceMaps: false,
     jsc: {
@@ -12,7 +14,7 @@ function swcModule () {
         dynamicImport: true
       }
     }
-  })
+  } as Options)
 
   const swcTSOptions = defu(swcOptions, {
     jsc: {
@@ -20,7 +22,7 @@ function swcModule () {
         syntax: 'typescript'
       }
     }
-  })
+  } as Options)
 
   nuxt.options.extensions.push('ts')
   nuxt.options.build.additionalExtensions = ['ts', 'tsx']
@@ -56,3 +58,15 @@ swcModule.meta = {
 }
 
 export default swcModule
+
+declare module '@nuxt/types/config/build' {
+  interface NuxtOptionsBuild {
+    swc?: Options
+  }
+}
+
+declare module '@nuxt/types' {
+  interface NuxtOptions {
+    build: NuxtOptionsBuild
+  }
+}

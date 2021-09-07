@@ -7,7 +7,8 @@
     "allowSyntheticDefaultImports": true,
     "strict": false,
     "types": [
-      "node"
+      "node",
+      "@nuxt/types"
     ]
   }
 }
