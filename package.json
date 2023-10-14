@@ -31,6 +31,6 @@
     "standard-version": "^9.1.1"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=18.18.2"
   }
 }
