@@ -17,20 +17,20 @@
     "test": "yarn lint"
   },
   "dependencies": {
-    "@swc/core": "^1.2.58",
-    "defu": "^5.0.0",
-    "swc-loader": "^0.1.14"
+    "@swc/core": "^1.4.11",
+    "defu": "^5.0.1",
+    "swc-loader": "^0.2.6"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.15.8",
-    "@nuxtjs/eslint-config-typescript": "^6.0.0",
-    "browserslist": "^4.0.0",
-    "eslint": "^7.22.0",
-    "nuxt": "^2.15.3",
-    "siroc": "^0.10.1",
+    "@nuxt/types": "^2.17.3",
+    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "browserslist": "^4.23.0",
+    "eslint": "^7.32.0",
+    "nuxt": "^2.17.3",
+    "siroc": "^0.16.0",
     "standard-version": "^9.1.1"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=12.22.12"
   }
 }
