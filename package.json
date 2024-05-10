@@ -28,7 +28,7 @@
     "eslint": "^7.22.0",
     "nuxt": "^2.15.3",
     "siroc": "^0.10.1",
-    "standard-version": "^9.1.1"
+    "commit-and-tag-version": "^9.5.0"
   },
   "engines": {
     "node": ">=12"
